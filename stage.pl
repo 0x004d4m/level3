@@ -60,7 +60,7 @@ my $jwt = JSON::WebToken->encode({
       exp => $time + 600,
       iat => $time
    },
-   "flag { ThisIsntAGoodPlaceToKeepAPrivateAccessKey } ", # PRIVATE KEY
+   "[SENSITIVE PRIVATE KEY CENSORED]", # PRIVATE KEY
    'RS256',
    {typ => 'JWT'}
 );
